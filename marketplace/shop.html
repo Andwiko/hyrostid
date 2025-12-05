@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace</title>
+    <link rel="stylesheet" href="/marketplace/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- LOADING SCREEN -->
+    <div id="loading-screen">
+        <div class="loader-content">
+            <div class="loader-cube">
+                <div class="cube-face cube-face-front"></div>
+                <div class="cube-face cube-face-back"></div>
+                <div class="cube-face cube-face-right"></div>
+                <div class="cube-face cube-face-left"></div>
+                <div class="cube-face cube-face-top"></div>
+                <div class="cube-face cube-face-bottom"></div>
+            </div>
+            <h1>Marketplace</h1>
+            <p>Sedang Memuat...</p>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+        <!-- Link Kembali ke Halaman Utama (di luar folder marketplace) -->
+        <a href="/index.html" class="cart-link"> 
+                BACK
+            </a>
+
+        <!-- Navigasi Kategori Produk -->
+        <nav>
+            <ul>
+                <li><a href="#" data-category="all">Semua</a></li>
+                <li><a href="#" data-category="weapon">Senjata</a></li>
+                <li><a href="#" data-category="tools">Alat</a></li>
+                <li><a href="#" data-category="natural">Blok Alami</a></li>
+                <li><a href="#" data-category="food">Makanan</a></li>
+                <li><a href="#" data-category="ingredients">Bahan</a></li>
+                <li><a href="#" data-category="building">Blok Bangunan</a></li>
+                <li><a href="#" data-category="colored">Blok Warna</a></li>
+            </ul>
+        </nav>
+
+        <!-- Aksi Pengguna -->
+        <div class="user-actions">
+            <a href="/marketplace/upload.html" class="cart-link">UPLOAD</a>
+            <a href="cart.html" class="cart-link">
+                Keranjang <span id="cart-count">0</span>
+            </a>
+        </div>
+    </div>
+    </header>
+
+    <main class="container">
+        <div id="product-container" class="product-grid">
+            <!-- Produk akan dimuat di sini oleh JavaScript -->
+        </div>
+    </main>
+
+    <footer>
+        <p class="text-gray-400 text-sm">
+            © 2025 <span class="text-green-400 font-semibold">Hyro|ST</span>. All rights reserved. 
+            Marketplace trading on hyrost server
+        </p>
+    </footer>
+
+    <script src="/marketplace/js/script.js"></script>
+</body>
+</html>
